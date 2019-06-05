@@ -1,11 +1,58 @@
 body {
-    background-color: pink;
+    background-color: lightgray;
 }
 
 h1 {
     background-color: #4aaaa5;
+    font-family: 'Georgia', Times, Times New Roman, serif;
+    color: white;
+    font-family: 'Georgia', Times, Times New Roman, serif;
+    padding: 15px 15px 15px 15px;
 }
 
 h2 {
     color: #4aaaa5;
+    margin-left: 300px;
+}
+
+p {
+    color: #777777;
+    line-height: 200%;
+    margin-right: 300px;
+    margin-left: 300px;
+    background-color: white;
+    padding: 10px 10px 10px 10px; 
+}
+
+hr {
+    border-color: lightgray;
+}
+
+.flexcontainer {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+a {
+    color: #777777;
+}
+
+h4 {
+    color: lightgray;
+}
+
+footer {
+    background-color: #474644;
+    color: lightgray;
+    text-align: center;
+    padding: 20px 20px 20px 20px;
+    font-size: 10px;
+}
+
+img {
+    float: left;
+    margin-left: 300px;
+    padding-right: 10px;
+    background-color: white;
 }
