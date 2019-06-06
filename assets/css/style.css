@@ -1,12 +1,12 @@
 body {
-    background-color: lightgray;
+    background-image: url(/Users/macuser/coding_bootcamp/basic_portfolio/assets/images/hexellence.png);
+    background-repeat: repeat;
 }
 
 h1 {
     background-color: #4aaaa5;
     font-family: 'Georgia', Times, Times New Roman, serif;
     color: white;
-    font-family: 'Georgia', Times, Times New Roman, serif;
     padding: 15px 15px 15px 15px;
     margin-top: 0px;
     margin-bottom: 0px;
@@ -16,6 +16,7 @@ h2 {
     color: #4aaaa5;
     margin-left: 10px;
     background-color: white;
+    font-family: 'Georgia', Times, Times New Roman, serif;
 }
 
 p {
@@ -28,7 +29,7 @@ p {
 
 hr {
     border-color: lightgray;
-    width: 700px;
+    width: 97%;
 }
 
 .flexcontainer {
@@ -36,28 +37,23 @@ hr {
     align-items: center;
     justify-content: space-around;
     background-color: white;
-    border-bottom: 1px solid;
-    border-top: 1px solid;
+    border-bottom: 2px solid #cccccc;
+    border-top: 2px solid #cccccc;
     margin-left: -20px;
     margin-right: -20px;
+    margin-top: -5px;
 }
 
 a {
     color: #777777;
+    text-decoration: none;
+    font-family: 'Arial', 'Helvetica Neue', Helvetica, sans-serif;
+    font-size: small;
+    font-weight: normal;
 }
 
 h4 {
     color: lightgray;
-}
-
-footer {
-    background-color: #474644;
-    color: lightgray;
-    text-align: center;
-    padding: 20px 20px 20px 20px;
-    font-size: 10px;
-    margin-left: -20px;
-    margin-right: -20px;
 }
 
 img {
@@ -70,4 +66,23 @@ img {
     background-color: white;
     margin-right: 300px;
     margin-left: 300px;
+    margin-top: 20px;
+    margin-bottom: 60px;
+    border: 1px solid #dddddd;
+    padding-top: 0px;
+    padding-left: 20px;
+    padding-right: 20px;
 }
+
+footer {
+    background-color: #666666;
+    color: lightgray;
+    text-align: center;
+    padding: 20px 20px 20px 20px;
+    font-size: 10px;
+    margin-left: -20px;
+    margin-right: -20px;
+    margin-bottom: -10px;
+    border-top: 8px solid #4aaaa5;
+}
+
