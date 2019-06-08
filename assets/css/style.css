@@ -69,13 +69,14 @@ img {
     background-color: white;
     width: 960px;
     margin-top: 20px;
-    margin-bottom: 60px;
+    margin-bottom: 80px;
     margin-left: auto;
     margin-right: auto;
     border: 1px solid #dddddd;
     padding-top: 0px;  
     padding-left: 20px;
     padding-right: 20px; 
+    
 }
 
 .form {
@@ -84,13 +85,13 @@ img {
     margin-right: auto;
     margin-left: auto;
     margin-top: 20px;
+    margin-bottom: 80px;
     border: 1px solid #dddddd;
     padding-top: 0px;
     padding-left: 20px;
     padding-right: 20px;
     padding-bottom: 10px;
     color: lightgray;
-    
 }
 
 #name {
@@ -131,9 +132,48 @@ footer {
     padding: 20px 20px 20px 20px;
     font-size: 10px;
     margin-left: -20px;
-    margin-right: -20px;
+    margin-top: 0px;
     border-top: 8px solid #4aaaa5;
     bottom: 0;
     position: fixed;
+    width: 100%;
+}
+
+#portfolio {
+    background-color: white;
+    width: 960px;
+    height: auto;
+    margin-top: 20px;
+    margin-bottom: 180px;
+    margin-left: auto;
+    margin-right: auto;
+    border: 1px solid #dddddd;
+    padding-top: 0px;  
+    padding-left: 20px;
+    padding-right: 20px; 
+}
+
+.first2 {
+    display: flex;
+    margin-bottom: 35px;
+    margin-top: 20px;
+}
+
+.next2 {
+    display: flex;
+    margin-bottom: 35px;
+}
+
+.last {
+    display: flex;
+    margin-bottom: 35px;
+}
+
+#pic2, #pic4 {
+    margin-left: 20px;
+}
+
+#pic11 {
+    position: relative;
     width: 100%;
 }
