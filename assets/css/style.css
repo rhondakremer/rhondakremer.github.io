@@ -28,7 +28,7 @@ h4 {
     font-family: 'Georgia', Times, Times New Roman, serif;
 }
 
-p {
+.bio {
     color: #777777;
     line-height: 200%;
     width: 100%;
@@ -171,9 +171,19 @@ footer {
 
 #pic2, #pic4 {
     margin-left: 20px;
+    position: relative;
 }
 
-#pic11 {
+#pic1, #pic3, #pic5 {
     position: relative;
-    width: 100%;
+}
+
+h3 {
+    background-color: #4aaaa5;
+    color: white;
+    margin-top: 150px;
+    padding: 10px;
+    width: 230px;
+    text-align: center;
+    position: absolute;
 }
