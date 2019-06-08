@@ -4,12 +4,13 @@ body {
 }
 
 h1 {
+    float: left;
     background-color: #4aaaa5;
     font-family: 'Georgia', Times, Times New Roman, serif;
     color: white;
-    padding: 15px 15px 15px 15px;
+    margin-left: 12%;
+    padding: 17px;
     margin-top: 0px;
-    margin-bottom: 0px;
 }
 
 h2 {
@@ -19,29 +20,36 @@ h2 {
     font-family: 'Georgia', Times, Times New Roman, serif;
 }
 
+h4 {
+    color: lightgray;
+    float: right;
+    margin-right: 13%;
+    margin-top: 24px;
+    font-family: 'Georgia', Times, Times New Roman, serif;
+}
+
 p {
     color: #777777;
     line-height: 200%;
-    padding-left: 10px;
-    padding-right: 10px;
+    width: 100%;
     font-family: 'Arial', 'Helvetica Neue', Helvetica, sans-serif;
 }
 
 hr {
-    border-color: lightgray;
-    width: 97%;
+    border: 1px solid #cccccc;
+    width: 100%;
+    margin-left: 0px;
+    padding-left: auto;
+    padding-right: auto;
+    
 }
 
-.flexcontainer {
-    display: flex;
-    align-items: center;
-    justify-content: space-around;
+.all {
     background-color: white;
     border-bottom: 2px solid #cccccc;
     border-top: 2px solid #cccccc;
-    margin-left: -20px;
-    margin-right: -20px;
-    margin-top: -5px;
+    width: 100%;
+    height: 70px;
 }
 
 a {
@@ -52,26 +60,68 @@ a {
     font-weight: normal;
 }
 
-h4 {
-    color: lightgray;
-}
-
 img {
     float: left;
     padding-right: 10px;
-    margin-left: 10px;
 }
 
 #main {
     background-color: white;
-    margin-right: 300px;
-    margin-left: 300px;
+    width: 960px;
     margin-top: 20px;
     margin-bottom: 60px;
+    margin-left: auto;
+    margin-right: auto;
+    border: 1px solid #dddddd;
+    padding-top: 0px;  
+    padding-left: 20px;
+    padding-right: 20px; 
+}
+
+.form {
+    background-color: white;
+    width: 960px;
+    margin-right: auto;
+    margin-left: auto;
+    margin-top: 20px;
     border: 1px solid #dddddd;
     padding-top: 0px;
     padding-left: 20px;
     padding-right: 20px;
+    padding-bottom: 10px;
+    color: lightgray;
+    
+}
+
+#name {
+    width: 97.5%;
+    padding-left: 10px;
+    padding-right:10px;
+    border: 2px solid #dddddd;
+}
+
+#email {
+    width: 97.5%;
+    padding-left: 10px;
+    padding-right:10px;
+    border: 2px solid #dddddd;
+}
+
+#message {
+    width: 97.5%;
+    padding-left: 10px;
+    padding-right:10px;
+    border: 2px solid #dddddd;
+}
+
+input {
+    color: #dddddd;
+}
+
+#button {
+    background-color: #4aaaa5;
+    color: white;
+    padding-bottom: 5px;
 }
 
 footer {
@@ -82,7 +132,8 @@ footer {
     font-size: 10px;
     margin-left: -20px;
     margin-right: -20px;
-    margin-bottom: -10px;
     border-top: 8px solid #4aaaa5;
+    bottom: 0;
+    position: fixed;
+    width: 100%;
 }
-
