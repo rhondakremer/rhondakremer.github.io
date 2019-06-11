@@ -1,5 +1,5 @@
 body {
-    background-image: url(/Users/macuser/coding_bootcamp/basic_portfolio/assets/images/hexellence.png);
+    background-image: url("../images/hexellence.png");
     background-repeat: repeat;
 }
 
