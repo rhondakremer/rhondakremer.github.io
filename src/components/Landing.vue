@@ -1,15 +1,12 @@
 <template>
-  <div class="hello">
-    Hey just testing stuff out, get it gurl
+  <div>
+    This will be like heyyy I'm Rhonda, here's a picture
   </div>
 </template>
 
 <script>
 export default {
-  name: 'HelloWorld',
-  props: {
-    msg: String
-  }
+
 }
 </script>
 
