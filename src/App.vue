@@ -17,5 +17,9 @@ export default {
 </script>
 
 <style>
+body {
+  background: url('./assets/full-bloom.png');
+  font-family: 'Alata', sans-serif;
+}
 
 </style>
