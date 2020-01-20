@@ -16,18 +16,27 @@
 </template>
 
 <script>
+import axios from 'axios';
+
 export default {
     data() {
         return{
             nameInput: null,
             emailInput: null,
-            messageInput: null
+            messageInput: null,
+            url: process.env.VUE_APP_FIREBASE_URL
         }
     },
     methods: {
        submitContact() {
-           alert("message sent!")
-           console.log(this.nameInput)
+        //    alert("message sent!")
+           let data = {}
+           data.name = this.nameInput;
+           data.email = this.emailInput;
+           data.message = this.messageInput;
+           axios.post(this.url, data)
+            .then(res => console.log(res))
+            .catch(err => console.log(err))
        }
    }
 }
