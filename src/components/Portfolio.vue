@@ -31,7 +31,7 @@ export default {
                     technologies: 'Vue.js, Firebase, Axios, AWS S3'
                     },
                 {   title: "Meme Wars", 
-                    img: require('../assets/screenshots/ss-memewars.png'), 
+                    img: require('../assets/screenshots/ss-meme-wars.png'), 
                     alt: 'Meme Wars Screenshot',
                     deployed: 'https://safe-depths-86355.herokuapp.com/',
                     github: 'https://github.com/rhondakremer/final-project',
@@ -44,7 +44,7 @@ export default {
                     github: 'https://github.com/rhondakremer/react-click-game',
                     technologies: 'React.js'},
                 {   title: "Positive News Scrape", 
-                    img: require('../assets/screenshots/ss-newsscraper.png'), 
+                    img: require('../assets/screenshots/ss-news-scraper.png'), 
                     alt: 'Positive News Scrape Screenshot',
                     deployed: 'https://arcane-wave-64414.herokuapp.com/',
                     github: 'https://github.com/rhondakremer/news-scrape',
