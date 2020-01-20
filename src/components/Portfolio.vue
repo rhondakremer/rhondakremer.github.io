@@ -1,10 +1,15 @@
 <template>
-  <div id="container" class="col-lg-10 offset-lg-1 col-md-10 offset-md-1 container" style="">
+  <div id="container" class="col-lg-10 offset-lg-1 col-md-10 offset-md-1 container" style="margin-bottom: 2%;">
    <div v-for="project in projects" :key="project.title" class="project-container">
     <!-- <p>{{ project.title }}</p> -->
     <img class="project-image image" :src="project.img" :alt="project.alt"  />
     <div class="overlay">
-    <div class="text">{{ project.title }}</div>
+    <div class="text">
+        <h2>{{ project.title }}</h2>
+        <p>Deployed: <br><a :href="project.deployed" target="_blank">{{ project.deployed}}</a></p>
+        <p>Github: <a :href="project.github" target="_blank">{{ project.github }}</a></p>
+        <p>Technologies: {{ project.technologies}}</p>
+    </div>
     </div>
     <div>
   </div>
@@ -18,10 +23,33 @@ export default {
     data() {
         return{
             projects: [
-                { title: "Vue Stock Trader", img: require('../assets/screenshots/ss-vue-stock-trader.png'), alt: 'Vue Stock Trader Screenshot' },
-                { title: "Meme Wars", img: require('../assets/screenshots/ss-memewars.png'), alt: 'Meme Wars Screenshot'},
-                { title: "Puppy Click Game", img: require('../assets/screenshots/ss-react-click-game.png'), alt: 'Puppy Click Game Screenshot' },
-                { title: "Positive News Scrape", img: require('../assets/screenshots/ss-newsscraper.png'), alt: 'Positive News Scrape Screenshot' },
+                {   title: "Vue Stock Trader", 
+                    img: require('../assets/screenshots/ss-vue-stock-trader.png'), 
+                    alt: 'Vue Stock Trader Screenshot',
+                    deployed: 'http://vuejs-stock-trader-app-rhonda.s3-website.us-east-2.amazonaws.com/',
+                    github: 'https://github.com/rhondakremer/vue-stock-trader',
+                    technologies: 'Vue.js, Firebase, Axios, AWS S3'
+                    },
+                {   title: "Meme Wars", 
+                    img: require('../assets/screenshots/ss-memewars.png'), 
+                    alt: 'Meme Wars Screenshot',
+                    deployed: 'https://safe-depths-86355.herokuapp.com/',
+                    github: 'https://github.com/rhondakremer/final-project',
+                    technologies: 'React.js, MongoDB, Mongoose, Node.js, Express'
+                    },
+                {   title: "Puppy Click Game", 
+                    img: require('../assets/screenshots/ss-react-click-game.png'), 
+                    alt: 'Puppy Click Game Screenshot',
+                    deployed: 'https://rhondakremer.github.io/react-click-game/',
+                    github: 'https://github.com/rhondakremer/react-click-game',
+                    technologies: 'React.js'},
+                {   title: "Positive News Scrape", 
+                    img: require('../assets/screenshots/ss-newsscraper.png'), 
+                    alt: 'Positive News Scrape Screenshot',
+                    deployed: 'https://arcane-wave-64414.herokuapp.com/',
+                    github: 'https://github.com/rhondakremer/news-scrape',
+                    technologies: 'Axios, Cheerio, Express, MongoDB, Mongoose'
+                },
                 
             ]
         }
@@ -65,16 +93,16 @@ export default {
   width: 100%;
   opacity: 0;
   transition: .5s ease;
-  background-color: #008CBA;
+  background-color: navy;
 }
 
 .project-container:hover .overlay {
-  opacity: 1;
+  opacity: 0.9;
 }
 
 .text {
   color: white;
-  font-size: 20px;
+  font-size: 18px;
   position: absolute;
   top: 50%;
   left: 50%;
@@ -82,5 +110,13 @@ export default {
   -ms-transform: translate(-50%, -50%);
   transform: translate(-50%, -50%);
   text-align: center;
+}
+
+a {
+    color: whitesmoke;
+}
+
+a:hover {
+   color: lightblue
 }
 </style>
