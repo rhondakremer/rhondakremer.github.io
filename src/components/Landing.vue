@@ -17,11 +17,12 @@ export default {
 <style scoped>
 #container {
   display: flex;
-  background-color: pink;
+  background-color: whitesmoke;
   text-align: center;
   padding: 2%;
   border-radius: 0.5em;
-  margin-top: 4%
+  margin-top: 4%;
+  border: 1px solid black;
 }
 
 #mypic {

@@ -28,7 +28,7 @@ export default {
   align-items:center; 
   border-bottom: 4px solid #78184a; 
   margin-bottom:2%;
-  background-color: whitesmoke;
+  background-color: rgb(248, 229, 233);;
   padding: 10px;
 }
 
