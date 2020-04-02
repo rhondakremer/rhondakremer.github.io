@@ -4,6 +4,7 @@
     <div id="brand-statement">
       <p>
         Full Stack Web Developer with excellent teamwork skills and keen attention to detail. Currently working as a front-end developer at Miami Dade County Public Schools. A graduate of the Full Stack Web Development Bootcamp at the University of Miami. Analytical thinking skills and competence in various languages and tools such as Javascript, Node.js, Vue, React, and more. Prepared to create high-level and fully-functioning websites and applications.</p>
+      <p>Contact me at <a href="mailto:rhondakremer@gmail.com" target="_top">rhondakremer@gmail.com</a>!</p>
       <p>
         <a href="https://github.com/rhondakremer" target="_blank"><img src="../assets/github-icon.png" class="icon" style="margin-left: -3%;" /></a>
         <a href="https://www.linkedin.com/in/rhondakremer/" target="_blank"><img src="../assets/linkedin-icon.png" class="icon" /></a>
@@ -37,7 +38,8 @@ export default {
 #brand-statement {
   line-height: 30px;
   margin-left: 2%;
-  font-size: 18px;
+  font-size: 20px;
+  margin-top: 2%;
 }
 
 .icon {
