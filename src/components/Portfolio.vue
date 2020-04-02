@@ -1,5 +1,5 @@
 <template>
-  <div id="container" class="col-lg-10 offset-lg-1 col-md-10 offset-md-1 container" style="margin-bottom: 2%;">
+  <div id="container" class="col-lg-10 offset-lg-1 col-md-10 offset-md-1 col-sm-12 col-xs-12 container" style="margin-bottom: 2%;">
    <div v-for="project in projects" :key="project.title" class="project-container">
     <!-- <p>{{ project.title }}</p> -->
     <img class="project-image image" :src="project.img" :alt="project.alt"  />
@@ -63,7 +63,7 @@ export default {
     padding: 10px;
     background-color: whitesmoke;
     display: flex; 
-    flex-wrap:wrap; 
+    flex-wrap: wrap; 
     align-items: center
 }
 
@@ -118,5 +118,43 @@ a {
 
 a:hover {
    color: lightblue
+}
+
+@media screen and (max-width: 1024px) {
+  .container {
+    display: block;
+  }
+
+  .project-container {
+    position: relative;
+    width: 100%;
+  }
+
+  .overlay {
+    opacity: 0.8;
+    border: white solid 1px;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  h2 {
+    font-size: 20px;
+    margin-top: 15px;
+  }
+
+  .text {
+    font-size: 14px;
+  }
+}
+
+@media screen and (max-width: 400px) {
+  h2 {
+    font-size: 18px;
+    margin-top: 15px;
+  }
+  
+  .text {
+    font-size: 10px;
+  }
 }
 </style>
